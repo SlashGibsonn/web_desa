@@ -1,0 +1,234 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    max-width: 80%;
+    margin:auto;
+}
+header .menu-navigasi{
+    display: inline;
+}
+header .box-navigasi{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    padding: 15px 0 15px 0;
+    align-items: center;
+}
+header .box-navigasi .logo h1{
+    color: rgb(237, 28, 28);
+    font-size: 35px;;
+}
+header .box-navigasi .menu-navigasi ul{
+    display: flex;
+}
+header nav li{
+    display: inline;
+}
+header nav li{
+    position:sticky;
+    top:0;
+}
+header .box-navigasi .menu-navigasi ul li{
+    list-style-type: none;
+    margin-right: 30px;
+}
+header .box-navigasi .menu-navigasi ul li a{ 
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+header .box-navigasi .menu-navigasi ul li a:hover{
+    color: rgb(243, 35, 35);
+}
+header .box-navigasi .menu-navigasi ul li i{
+    display:none;
+}
+header .box-navigasi .menu-bar{
+    display: none;
+    font-size: 33px;
+}
+header .box-navigasi .menu-bar i {
+    font-size: 33px;
+}
+main .abstrak img{
+    width:70%;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(0,0,0,0.5);
+    transition: all .3s ease-in;
+}
+main .abstrak img:hover{
+    transform: translate(-20px,-20px);
+}
+main .container{
+    margin-top: 40px;
+}
+main .abstrak{
+    text-align: justify;
+}
+main .abstrak p{
+    margin-top: 15px;
+}
+main .garis{
+    width:58%;
+    height: 0.5em;
+    background-color:rgb(243, 35, 35);
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    
+}
+main .foto1 img{
+    width:50%;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(0,0,0,0.5);
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    transition: all .3s ease-in;
+}
+main .foto1{
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}
+main .foto1 h2{
+    margin-bottom: 10px;
+    padding-left: 50px;
+    text-align: center;
+}
+main .foto1 article{
+    text-indent: 10%;
+    padding-left: 50px;
+}
+main .foto1 p{
+    text-indent: 10%;
+    padding-left: 50px;
+}
+main .foto1 img:hover{
+    transform: translate(-10px,-10px);
+}
+main .foto2 .box2{
+    margin-top:50px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}
+main .foto2 img{
+    width:50%;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(0,0,0,0.5);
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    transition: all .3s ease-in;
+}
+main .foto2 img:hover{
+    transform: translate(-10px,-10px);
+}
+main .foto2 article{
+    text-indent: 10%;
+    padding-right: 50px;
+}
+@media screen and (max-width:990px) {
+    header .box-navigasi .menu-bar{
+        display:block;
+    }
+    header .box-navigasi .menu-navigasi{
+        display: none;
+    }
+}
+
+@media screen and (min-width:990px) {
+    header .box-navigasi .menu-navigasi{
+        display: block;
+    }
+}
+@media screen and (max-width:700px) {
+    header .logo{
+        font-size: 25px;
+    }
+    main h1{
+        font-size: 25px;
+    }
+    main h2{
+        font-size: 17px;
+    }
+    main p{
+        font-size: 13px;
+    }
+    main .abstrak img{
+        width: 50%
+    }
+    main .foto1 img{
+        width: 40%
+    }
+    main .foto1 .box{
+        font-size: 60%;
+    }
+    main .foto2 article{
+        font-size: 60%;
+    }
+    footer{
+        font-size:13px ;
+    }
+}
+@media screen and (max-width:376px){
+    main h1{
+        font-size: 15px;
+    }
+    main h2{
+        font-size: 13px;
+    }
+    main p{
+        font-size: 12px;
+    }
+    main .foto1 img{
+        width: 40%
+    }
+    main .foto1 .box{
+        font-size: 40%;
+    }
+    main .foto1{
+        display: flex;
+        flex-direction: column;
+    }
+    main .foto1 article{
+        font-size: 10px;
+    }
+    main .foto2 .box2{
+        font-size: 15px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    footer{
+        font-size: 8px;
+        padding:10px;
+    }
+}
+footer{
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    background-color:rgb(187, 38, 38);
+    text-align: left;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  footer i{
+    margin-right: 10px;
+  }
+  footer p{
+    display: inline;
+  }
+  footer a{
+    color: #fff;
+  }
+
